@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/listener.js")
+  h1 Post a Joke
+  div#jokes(height="500",scroll="auto")
+    p#joke
+  form#jokeform
+    input#writejokes(type="text",style="width:500px")
+    input#submit(type="submit",value="send")
+
