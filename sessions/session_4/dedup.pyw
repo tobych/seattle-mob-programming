@@ -6,7 +6,6 @@ import sys
 from PyQt4.QtCore import (Qt, SIGNAL)
 from PyQt4.QtGui import (QApplication, QComboBox, QDialog, QVBoxLayout, QTextBrowser, QFileDialog,
                          QGridLayout, QLabel, QPushButton, QCheckBox, QLineEdit, QTableView)
-from lfns import lfns
 
 
 class Form(QDialog):
