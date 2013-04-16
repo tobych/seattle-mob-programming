@@ -1,0 +1,2 @@
+hashlib — Secure hashes and message digests
+http://docs.python.org/2/library/hashlib.html?highlight=hash#module-hashlib
