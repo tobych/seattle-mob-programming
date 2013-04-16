@@ -1,0 +1,26 @@
+>>> f1blob=f1.read()
+>>> f2blob=f2.read()
+>>> f1blob==f2blob
+True
+>>> f1hash=hashlib.md5(f1blob)
+>>> f1hash
+<md5 HASH object @ 0x8e03400>
+>>> print f1hash
+<md5 HASH object @ 0x8e03400>
+>>> f1hash,f2hash=(hashlib.md5(blob) for blob in [f1blob, f2blob])
+>>> print f1hash
+<md5 HASH object @ 0x8e03520>
+>>> print f2hash
+<md5 HASH object @ 0x8e03540>
+>>> print f1hash, f2hash
+<md5 HASH object @ 0x8e03520> <md5 HASH object @ 0x8e03540>
+>>> f1hash.hexdigest
+<built-in method hexdigest of _hashlib.HASH object at 0x8e03520>
+>>> f1hash.hexdigest()
+'d41d8cd98f00b204e9800998ecf8427e'
+>>> f2hash.hexdigest()
+'d41d8cd98f00b204e9800998ecf8427e'
+>>> exit
+Use exit() or Ctrl-D (i.e. EOF) to exit
+>>> 
+
